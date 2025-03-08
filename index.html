@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Panoramic Viewer</title>
+  <link rel="stylesheet" type="text/css" href="pannellum.css">
+</head>
+<body>
+  <!-- Container for the panorama -->
+  <div id="panorama" style="width: 100%; height: 600px;"></div>
+
+  <!-- Include Pannellum JavaScript -->
+  <script type="text/javascript" src="pannellum.js"></script>
+  <script>
+    pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": "100_0103/Panorama Stitch.jpg",  // Your panoramic image file
+      "autoLoad": true
+    });
+  </script>
+</body>
+</html>
